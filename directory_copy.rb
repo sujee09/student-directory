@@ -12,6 +12,7 @@ def input_students
   end
   
   students
+  
 end
 
 def print_header
@@ -20,8 +21,8 @@ def print_header
 end
 
 def print(students)
-students.each.with_index(1) do |student, index|
-  puts "#{index}: #{student[:name]} (#{student[:cohort]} cohort)" 
+students.each do |student|
+  puts student[:name] if student[:name].start_with?("s")
  end
 end
 

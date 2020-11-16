@@ -22,8 +22,8 @@ end
 
 def print(students)
 students.each do |student|
-  puts student[:name] if student[:name].start_with?("s")
- end
+  puts student[:name] if student[:name].length <= ("5".to_i) 
+  end
 end
 
 def print_footer(students)
